@@ -1,0 +1,147 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 设置html和body元素的高度为100% */
+html,
+body {
+    min-height: 1000px; /* 设置最小高度为1000px */
+}
+
+/* 页眉样式 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #212121;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* logo样式 */
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+/* 网站名字样式 */
+.site-name {
+    font-size: 24px;
+}
+
+/* 容器样式 */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* 允许多行布局 */
+    justify-content: center;
+    padding: 20px; /* 添加内边距 */
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* 内容项样式 */
+.item {
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    display: grid; /* 使用网格布局 */
+    grid-template-columns: auto 1fr; /* 图片宽度自适应，下载按钮占剩余空间 */
+}
+
+/* 图片样式 */
+.item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px; /* 右边外边距 */
+}
+
+/* 下载按钮样式 */
+.item .download-btn {
+    width: 80px; /* 宽度为80像素 */
+    height: 40px; /* 高度为40像素 */
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex; /* 使用 Flex 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    margin-left: auto; /* 右边外边距 */
+    margin-right: 20px; /* 左边外边距 */
+    text-decoration: none; /* 去掉下划线 */
+}
+
+.item .download-btn:hover {
+    background-color: #0056b3;
+}
+
+/* 软件名字样式 */
+.item p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px; /* 顶部外边距 */
+}
+
+/* 页脚样式 */
+.footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    color: #696868;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 页脚内容样式 */
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* 让链接元素居中 */
+    padding: 10px;
+}
+
+/* 页脚链接样式 */
+.footer-content a {
+    background-clip: text;
+    text-decoration: none; /* 去掉下划线 */
+    color: transparent; /* 隐藏文字颜色 */
+}
+
+/* 博客链接样式 */
+.footer-content .blog-link,
+.footer-content .other-link {
+    position: relative;
+    background: linear-gradient(to right, #b8f322, #3b44f8); /* 渐变颜色 */
+    -webkit-background-clip: text; /* 将渐变应用于文本 */
+    text-decoration: none; /* 去掉默认下划线 */
+}
+
+.footer-content .blog-link::before,
+.footer-content .other-link::before {
+    content: ''; /* 伪元素内容为空 */
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0; /* 初始宽度为0，没有下划线 */
+    height: 2px;
+    background: linear-gradient(to right, #cbe098, #4e0b0c); /* 渐变颜色 */
+    transition: width 0.3s ease; /* 添加过渡效果 */
+}
+
+.footer-content .blog-link:hover::before,
+.footer-content .other-link:hover::before {
+    width: 100%; /* 鼠标悬停时下划线完全显示 */
+}

@@ -1,1 +1,120 @@
+/* CSS 样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #313030;
+    margin: 0;
+    padding: 0;
+}
 
+.header {
+    background-color: #1f1e1e;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 15px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 80px auto 0; 
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px); /* 20px 是左右内边距的总和 */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px; /* 右边距为 10px */
+}
+
+button[type="submit"], button[type="ggmm"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover, button[type="ggmm"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="submit"]:focus, button[type="ggmm"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    width: calc(100% - 40px); /* 20px 是左右内边距的总和 */
+    margin: 10px auto 10px; /* 上下外边距为 10px，左右外边距自动 */
+    text-align: center; /* 文字居中 */
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+.drag-drop-area {
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.drag-drop-area:hover {
+    background-color: #f5f5f5;
+}
+
+.drag-drop-area.active {
+    background-color: #f0f8ff;
+}
+
+/* 删除文件按钮样式 */
+.delete-file-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px; /* 添加左边距 */
+}
+
+.delete-file-btn:hover {
+    background-color: #bd2130;
+}
