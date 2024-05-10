@@ -8,7 +8,7 @@
 
 具体使用方法请参考 [AiQiji](https://aiqji.com)。
 
-
+demo（示例网站） [AiQiji软件库](https://jqz.ink)。
 
 #### 参与贡献
 
