@@ -20,8 +20,8 @@
 1.  使用了不同的语言:HTML、CSS、、JS、PHP
 2.  AiQiji 官方博客:[AiQiji](https://aiqji.com)
 ![测试图1](https://raw.githubusercontent.com/JiQingzhe2004/Software-library/main/%E6%B5%8B%E8%AF%95%E5%9B%BE1.png)
-![测试图2](https://foruda.gitee.com/images/1715350241612500507/aaef9915_13519503.png "screely-1715347687866.png")
-![测试图3](https://foruda.gitee.com/images/1715350263511350798/d6e423f2_13519503.png "screely-1715347716603.png")
-![测试图4](https://foruda.gitee.com/images/1715350282757724236/620a77a1_13519503.png "screely-1715347759858.png")
-![测试图5](https://foruda.gitee.com/images/1715350308117435981/849bc820_13519503.png "screely-1715347773977.png")
-![测试图6](https://foruda.gitee.com/images/1715350329686629538/75d69330_13519503.png "screely-1715348081853.png")
+![测试图2](https://raw.githubusercontent.com/JiQingzhe2004/Software-library/main/%E6%B5%8B%E8%AF%95%E5%9B%BE2.png)
+![测试图3](https://raw.githubusercontent.com/JiQingzhe2004/Software-library/main/%E6%B5%8B%E8%AF%95%E5%9B%BE3.png)
+![测试图4](https://raw.githubusercontent.com/JiQingzhe2004/Software-library/main/%E6%B5%8B%E8%AF%95%E5%9B%BE4.png)
+![测试图5](https://raw.githubusercontent.com/JiQingzhe2004/Software-library/main/%E6%B5%8B%E8%AF%95%E5%9B%BE5.png)
+![测试图6](https://raw.githubusercontent.com/JiQingzhe2004/Software-library/main/%E6%B5%8B%E8%AF%95%E5%9B%BE6.png)
