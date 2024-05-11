@@ -6,7 +6,7 @@
 
 #### 使用方法
 
-具体使用方法请参考 [AiQiji](https://aiqji.com)。
+具体使用方法请参考 [AiQiji](https://aiqji.com/index.php/2024/05/11/软件库模板开源/)。
 
 demo（示例网站） [AiQiji软件库](https://jqz.ink)。
 
