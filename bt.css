@@ -1,24 +1,34 @@
 /* CSS 样式 */
 body {
     font-family: Arial, sans-serif;
-    background-color: #313030;
-    margin: 0;
-    padding: 0;
+    background-image: url('https://api.dujin.org/bing/1920.php'); /* 自定义背景图片 */
+    background-size: cover; /* 背景图片覆盖整个页面 */
+    background-attachment: fixed; /* 背景固定 */
+    margin: 0; /* 移除默认外边距 */
+    padding: 0; /* 移除默认内边距 */
 }
 
 .header {
-    background-color: #1f1e1e;
+    background-color: #1f1e1e73;
     color: #fff;
     text-align: center;
     padding: 8px 0;
-    border-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    backdrop-filter: blur(5px);
+    transition: border-radius 0.3s ease;
 }
 
+.header:hover {
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 56%;
+}
 .container {
     max-width: 600px;
-    margin: 80px auto 0; 
+    margin: 10px auto 80px; 
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #ffffff7d;
+    backdrop-filter: blur(10px);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -94,6 +104,7 @@ input[type="file"] {
     padding: 20px;
     text-align: center;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .drag-drop-area:hover {
@@ -117,4 +128,25 @@ input[type="file"] {
 
 .delete-file-btn:hover {
     background-color: #bd2130;
+}
+
+.quanbu {
+    max-width: 600px;
+    margin: 10px auto 0; 
+    padding: 20px;
+    background-color: #ffffff7d;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.qbrj {            /*大小*/
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
 }

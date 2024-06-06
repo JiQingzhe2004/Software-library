@@ -19,8 +19,12 @@ if (!isset($_SESSION['authenticated']) || !$_SESSION['authenticated']) {
 </head>
 <body>
     <header class="header">
-        <h1>AiQiji软件库管理员面板</h1>
+        <h1>AiQiji软件库软件添加面板</h1>
     </header>
+    
+    <div class="quanbu">
+        <a href="manage_software.html"><button class="qbrj">全部软件</button></a>
+    </div>
 
     <div class="container">
         <form id="software-form" action="add_software.php" method="post" enctype="multipart/form-data">
