@@ -56,6 +56,14 @@ body {
     cursor: pointer;
     display: grid; /* 使用网格布局 */
     grid-template-columns: auto 1fr; /* 图片宽度自适应，下载按钮占剩余空间 */
+    transition: 0.3s ease;
+}
+
+.item:hover {
+    background-color: #414141;
+    /*阴影*/
+    box-shadow: 0 0 10px rgba(63, 63, 63, 0.5);
+    transform: translateY(-10px) scale(1.05);
 }
 
 /* 图片样式 */
@@ -103,7 +111,7 @@ body {
     background-color: #1a1a1a;
     padding: 20px;
     color: #696868;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -2px 5px rgba(255, 255, 255, 0.2);
 }
 
 /* 页脚内容样式 */
@@ -124,7 +132,7 @@ body {
 .footer-content .blog-link,
 .footer-content .other-link {
     position: relative;
-    background: linear-gradient(to right, #b8f322, #3b44f8); /* 渐变颜色 */
+    background: linear-gradient(to right, #00ffbb59, #00aaffa4); /* 渐变颜色 */
     -webkit-background-clip: text; /* 将渐变应用于文本 */
     text-decoration: none; /* 去掉默认下划线 */
 }
@@ -137,11 +145,17 @@ body {
     left: 0;
     width: 0; /* 初始宽度为0，没有下划线 */
     height: 2px;
-    background: linear-gradient(to right, #cbe098, #4e0b0c); /* 渐变颜色 */
+    background: linear-gradient(to right, #e9ffb4, #001eff6d); /* 渐变颜色 */
     transition: width 0.3s ease; /* 添加过渡效果 */
 }
 
 .footer-content .blog-link:hover::before,
 .footer-content .other-link:hover::before {
     width: 100%; /* 鼠标悬停时下划线完全显示 */
+}
+
+@media only screen and (max-width: 600px) {
+    .blog-link, .other-link {
+        display: none;
+    }
 }
